@@ -4,7 +4,7 @@
 Plugin Name: Accordion
 Plugin URI: http://www.themepoints.com
 Description: Wp Accordion is a fully responsive and jquery WordPress plugin that offering a modern and engaging user experience.
-Version: 1.0
+Version: 1.1
 Author: themepoints
 Author URI: http://www.themepoints.com
 License URI: http://www.themepoints.com/copyright/
@@ -90,6 +90,7 @@ wp accordion option init
 function themepoints_custom_accordion_option_init(){
 	
 	register_setting( 'custom_accordion_options_setting', 'themepoints_accordion_theme');
+	register_setting( 'custom_accordion_options_setting', 'accordion_content_font_pages');
     }
 
 add_action('admin_init', 'themepoints_custom_accordion_option_init' );
@@ -108,7 +109,7 @@ function custom_accordion_shortcodes($atts, $content = null ) {
 				'color' => '#000',
 				'fontcolor' => '#fff',
 				'fontsize' => '14',				
-				'count' => 5,
+				'count' => 50,
 				), $atts);
 
 
@@ -121,11 +122,12 @@ function custom_accordion_shortcodes($atts, $content = null ) {
 			$accordion="";
 			
 			$themepoints_accordion_theme = get_option( 'themepoints_accordion_theme' );		
+			$accordion_content_font_pages = get_option( 'accordion_content_font_pages' );		
 			
 
 			$accordion.='<div class="container '.$themepoints_accordion_theme.'" style="width:100%; height:auto">';
 				$accordion.='<ul class="responsive-accordion responsive-accordion-default bm-larger">';
-					query_posts('post_type=accordion_tp&posts_per_page='.$count);
+					query_posts('post_type=accordion_tp&posts_per_page='.$accordion_content_font_pages);
 					
 					if (have_posts()) : while (have_posts()) : the_post();
 					$title= get_the_title();

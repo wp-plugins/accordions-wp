@@ -11,6 +11,7 @@
 			$accordion_padding = get_option( 'accordion_padding' );
 			$accordion_content_font_size = get_option( 'accordion_content_font_size' );
 			$themepoints_accordion_theme = get_option( 'themepoints_accordion_theme' );			
+			$accordion_content_font_pages = get_option( 'accordion_content_font_pages' );			
 		}
 
 	else
@@ -44,6 +45,11 @@
 
 			$themepoints_accordion_theme = $_POST['themepoints_accordion_theme'];
 			update_option('themepoints_accordion_theme', $themepoints_accordion_theme);
+
+			$accordion_content_font_pages = $_POST['accordion_content_font_pages'];
+			update_option('accordion_content_font_pages', $accordion_content_font_pages);
+			
+			
 			?>
 			<div class="updated"><p><strong><?php _e('Changes Saved.' ); ?></strong></p>
             </div>
@@ -143,6 +149,14 @@
 				<td style="vertical-align:middle;">
 <input  size='10' name='accordion_content_font_size' class='accordion-font_size' type='text' id="content-font-size" value='<?php echo esc_attr($accordion_content_font_size); ?>' />px<br />
 <span style="font-size:12px;color:#22aa5d">select accordion font size.default font size :15px</span>
+				</td>
+			</tr> 
+			
+			<tr valign="top">
+				<th scope="row"><label for="accordion_content_font_pages">Show Post</label></th>
+				<td style="vertical-align:middle;">
+<input  size='10' name='accordion_content_font_pages' class='accordion-font_size_pages' type='text' id="content-font-size-pages" value='<?php echo esc_attr($accordion_content_font_pages); ?>' /><br />
+<span style="font-size:12px;color:#22aa5d">Input how many post you want to show per page.</span>
 				</td>
 			</tr> 
 

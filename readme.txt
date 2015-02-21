@@ -4,7 +4,7 @@ Donate link:http://themepoints.com
 Tags:  accordion, accordion's , wp accordion , responsive accordion, wordpress accordion, custom accordion wordpress, easy accordion.
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,11 +13,6 @@ Responsive HTML & CSS3 accordion for WordPress.
 == Description ==
 
 Accordion's wp is a fully responsive and jQuery WordPress plugin that offering a modern and engaging user experience.
-
-
-### Accordion-wp by http://themepoints.com
-
-* [Live demo!&raquo;](http://themepoints.com)
 
 
 <strong>Plugin Features </strong>
@@ -65,6 +60,11 @@ When accordions options setup done please paste [accordion-themepoints] this sho
 
 
 == Changelog ==
+
+= 1.1 =
+
+* fix post limit.
+* add option in setting page.
 
 
 = 1.0 =
