@@ -84,6 +84,8 @@ add_action('init', 'custom_accordion_post_register');
 
 
 
+
+
 /***************************************
 wp accordion option init
 ***************************************/
