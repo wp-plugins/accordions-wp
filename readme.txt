@@ -61,6 +61,8 @@ When accordions options setup done please paste [accordion-themepoints] this sho
 
 == Changelog ==
 
+* fix plugin header problem
+
 = 1.1 =
 
 * fix post limit.

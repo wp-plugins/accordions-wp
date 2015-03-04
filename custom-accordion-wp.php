@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Accordion
+Plugin Name: Accordion-Wp
 Plugin URI: http://www.themepoints.com
 Description: Wp Accordion is a fully responsive and jquery WordPress plugin that offering a modern and engaging user experience.
 Version: 1.1
