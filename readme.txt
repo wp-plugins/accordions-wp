@@ -12,7 +12,7 @@ Responsive HTML & CSS3 accordion for WordPress.
 
 == Description ==
 
-Accordion's wp is a fully responsive and jQuery WordPress plugin that offering a modern and engaging user experience.
+Accordion's wp is a fully responsive HTML & CSS3 WordPress plugin that offering a modern and engaging user experience.
 
 
 <strong>Plugin Features </strong>
